@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Perros aleatorios App</h1>
+    <p>F5 para ver diferentes perros</p>
+
+    <section id="randomPerros">
+      <h2>Perros aleatorios</h2>
+      <span id="error"></span>
+
+      <article>
+        <img
+          id="img1"
+          width="100px"
+          height="100px"
+          alt="foto de perro aleatorio1"
+        />
+        <button id="btnFav1" onclick="saveFavoritePerros()">Guardar perro en fav</button>
+      </article>
+      <article>
+        <img
+          id="img2"
+          width="100px"
+          height="100px"
+          alt="foto de perro aleatorio1"
+        />
+        <button id="btnFav2" onclick="saveFavoritePerros()">Guardar perro en fav</button>
+      </article>
+      <button onclick="loadRandomPerros()">Recargar</button>
+    </section>
+
+    <section id="favoritesPerros">
+      <h2>Perros favs</h2>
+      <article>
+        <img
+          id="img3"
+          width="100px"
+          height="100px"
+          alt="foto de perro aleatorio1"
+        />
+        <button>Sacar perro en fav</button>
+      </article>
+    </section>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
